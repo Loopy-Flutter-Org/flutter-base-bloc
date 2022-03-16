@@ -8,17 +8,33 @@
 class ExLotteItemModel {
   late String _returnValue;
   late String _drwNoDate;
-  late String _totSellamnt;
-  late String _firstWinamnt;
-  late String _firstPrzwnerCo;
-  late String _drwtNo1;
-  late String _drwtNo2;
-  late String _drwtNo3;
-  late String _drwtNo4;
-  late String _drwtNo5;
-  late String _drwtNo6;
-  late String _bnusNo;
-  late String _drwNo;
+  late int _totSellamnt;
+  late int _firstWinamnt;
+  late int _firstPrzwnerCo;
+  late int _drwtNo1;
+  late int _drwtNo2;
+  late int _drwtNo3;
+  late int _drwtNo4;
+  late int _drwtNo5;
+  late int _drwtNo6;
+  late int _bnusNo;
+  late int _drwNo;
+
+
+  ExLotteItemModel(
+      this._returnValue,
+      this._drwNoDate,
+      this._totSellamnt,
+      this._firstWinamnt,
+      this._firstPrzwnerCo,
+      this._drwtNo1,
+      this._drwtNo2,
+      this._drwtNo3,
+      this._drwtNo4,
+      this._drwtNo5,
+      this._drwtNo6,
+      this._bnusNo,
+      this._drwNo);
 
   ExLotteItemModel.fromJson(Map<String, dynamic> json) {
     _returnValue = json["returnValue"];
@@ -36,27 +52,27 @@ class ExLotteItemModel {
     _drwNo = json["drwNo"];
   }
 
-  String get drwNo => _drwNo;
+  int get drwNo => _drwNo;
 
-  String get bnusNo => _bnusNo;
+  int get bnusNo => _bnusNo;
 
-  String get drwtNo6 => _drwtNo6;
+  int get drwtNo6 => _drwtNo6;
 
-  String get drwtNo5 => _drwtNo5;
+  int get drwtNo5 => _drwtNo5;
 
-  String get drwtNo4 => _drwtNo4;
+  int get drwtNo4 => _drwtNo4;
 
-  String get drwtNo3 => _drwtNo3;
+  int get drwtNo3 => _drwtNo3;
 
-  String get drwtNo2 => _drwtNo2;
+  int get drwtNo2 => _drwtNo2;
 
-  String get drwtNo1 => _drwtNo1;
+  int get drwtNo1 => _drwtNo1;
 
-  String get firstPrzwnerCo => _firstPrzwnerCo;
+  int get firstPrzwnerCo => _firstPrzwnerCo;
 
-  String get firstWinamnt => _firstWinamnt;
+  int get firstWinamnt => _firstWinamnt;
 
-  String get totSellamnt => _totSellamnt;
+  int get totSellamnt => _totSellamnt;
 
   String get drwNoDate => _drwNoDate;
 

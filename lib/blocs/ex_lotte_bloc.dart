@@ -11,17 +11,20 @@ import 'package:rxdart/rxdart.dart';
 class ExLotteBloc{
   final _repository = ExLotteRepository();
   final _lotteFetcher = PublishSubject<ExLotteItemModel>();
+  ExLotteItemModel? lotteResult = null;
 
   Stream<ExLotteItemModel> get allLotte => _lotteFetcher.stream;
 
-  fetchAllLotte() async {
-    ExLotteItemModel itemLotte = await _repository.fetchLotte();
+  fetchAllLotte(String drwNo) async {
+    ExLotteItemModel itemLotte = await _repository.fetchLotte(drwNo);
     _lotteFetcher.sink.add(itemLotte);
+    lotteResult = itemLotte;
   }
 
   dispose() {
     _lotteFetcher.close();
   }
+
 }
 
 final exLotteBloc = ExLotteBloc();

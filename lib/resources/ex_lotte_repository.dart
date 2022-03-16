@@ -12,5 +12,5 @@ import 'package:loopy_base_bloc/resources/ex_lotte_api_provider.dart';
 class ExLotteRepository {
   final lotteProvider = ExLotteApiProvider();
 
-  Future<ExLotteItemModel> fetchLotte() => lotteProvider.fetchLotteData();
+  Future<ExLotteItemModel> fetchLotte(String drwNo) => lotteProvider.fetchLotteData(drwNo);
 }
