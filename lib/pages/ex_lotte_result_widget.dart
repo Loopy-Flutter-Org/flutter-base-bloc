@@ -15,7 +15,7 @@ Widget lotteResultWidget(ExLotteItemModel? snapshot) {
     return Container();
   } else {
     print('@@@@@@ [LotteResultWidget] snapshot.data != null  : $snapshot');
-    ExLotteItemModel result = snapshot!;
+    ExLotteItemModel result = snapshot;
     return Center(
       child: Text("[ result ]  \ndrwNo : ${result.drwNo.toString()}\ndrwNoData : ${result.drwNoDate}", textScaleFactor: 2,),
     );

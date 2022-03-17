@@ -66,6 +66,7 @@ class ExLotteMain extends StatelessWidget {
                 ),
               ),
               controller: inputController,
+
             ),
           ),
 

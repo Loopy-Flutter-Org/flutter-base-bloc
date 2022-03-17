@@ -8,10 +8,10 @@ import 'package:rxdart/rxdart.dart';
  * KiU
  * bloc example
  */
-class ExLotteBloc{
+class ExLotteBloc {
   final _repository = ExLotteRepository();
   final _lotteFetcher = PublishSubject<ExLotteItemModel>();
-  ExLotteItemModel? lotteResult = null;
+  ExLotteItemModel? lotteResult;
 
   Stream<ExLotteItemModel> get allLotte => _lotteFetcher.stream;
 
