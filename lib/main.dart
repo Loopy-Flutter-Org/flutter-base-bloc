@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loopy_base_bloc/Home/home.dart';
+import 'package:loopy_base_bloc/pages/Home/home.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:loopy_base_bloc/Pages/list.dart';
+import 'package:loopy_base_bloc/pages/lists/list.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
